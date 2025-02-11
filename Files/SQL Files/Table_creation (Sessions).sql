@@ -13,7 +13,6 @@ CREATE TABLE session_data (
     skip_rate DECIMAL(5,2), -- Skipped tracks / total tracks
     completion_rate DECIMAL(5,2), -- Tracks completed (trackdone) / total tracks
     session_type VARCHAR(10), -- Short, Medium, Long (based on duration thresholds)
-    track_completion_status VARCHAR(10), -- Completed, Skipped (based on reason_end)
     interrupted_session BOOLEAN, -- TRUE if session ended unexpectedly (logout, trackerror, etc.)
     device_category VARCHAR(50), -- Mobile, Desktop, Web, Speaker, or "Multiple"
     repeat_listens_within_session INT, -- Count of repeat tracks in the session

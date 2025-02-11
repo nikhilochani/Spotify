@@ -1,7 +1,7 @@
 -- Date Cleaning
 --Create it as a stored procedure
 
-Select columns,data_type
+Select column_Name, data_type,columns,data_type
 from information_schema.columns
 where table_name ='streaminghistory';
 
